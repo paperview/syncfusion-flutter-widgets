@@ -121,7 +121,7 @@ class ChartAreaRenderObjectElement extends MultiChildRenderObjectElement {
 
   void _scheduleUpdate() {
     if (!_hasUpdateScheduled && !dirty) {
-      markNeedsBuild();
+      markNeedsLayout();
       _hasUpdateScheduled = true;
     }
   }
@@ -3257,7 +3257,7 @@ class RenderLoadingIndicator extends RenderProxyBox
       }
     }
     if (buildLoadMoreIndicator) {
-      markNeedsBuild();
+      markNeedsLayout();
     }
   }
 

@@ -15,7 +15,7 @@
 * Provided th​e Material 3 themes support.
 
 **Bug fixes**
-* \#FB50948 - Now, the 'setState() or markNeedsBuild() called during the build' exception will not be thrown when tapping today's button after swiping the `timelineMonth` view.
+* \#FB50948 - Now, the 'setState() or markNeedsLayout() called during the build' exception will not be thrown when tapping today's button after swiping the `timelineMonth` view.
 * \#FB50846 - Now, text size remains consistent when the app state or themes gets changed.
 
 ## [24.1.46] - 17/01/2024

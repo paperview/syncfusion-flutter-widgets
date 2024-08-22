@@ -165,7 +165,7 @@ class CoreTooltipState extends State<CoreTooltip>
       if (renderObject != null &&
           renderObject.attached &&
           renderObject is RenderConstrainedLayoutBuilder) {
-        renderObject.markNeedsBuild();
+        renderObject.markNeedsLayout();
       }
     }
   }
@@ -174,7 +174,7 @@ class CoreTooltipState extends State<CoreTooltip>
     immediately ? _controller.reset() : _controller.reverse();
     // (_tooltipKey.currentContext?.findRenderObject()
     //         as RenderConstrainedLayoutBuilder<BoxConstraints, RenderBox>?)
-    //     ?.markNeedsBuild();
+    //     ?.markNeedsLayout();
   }
 
   void _startShowTimer() {
